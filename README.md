@@ -8,7 +8,7 @@ Tutorial here (Writen in Thai, use Google Translate for english)
 special thank to google translate free api from : https://github.com/k3rn31p4nic/google-translate-api
 
 
-![animated screenshot of PinSnapper in action](https://raw.githubusercontent.com/chrisdanford/PinSnapper/master/docs/preview.gif)
+![animated screenshot](https://github.com/comdet/SnapOCR/raw/master/previews/preview.gif)
 
 ## Installation
 
@@ -17,7 +17,7 @@ special thank to google translate free api from : https://github.com/k3rn31p4nic
 ## Usage
 
 - install the extension
-- click the SnapOCR icon on the right side of the address bar
+- click the icon on the right side of the address bar
 - drag to select a rectangle on image dialog
 
 ## License
