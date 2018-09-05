@@ -1,0 +1,71 @@
+body.hideNopin img[nopin] {
+  visibility: hidden !important;
+}
+.pinSnapperOverlay {
+  position: fixed;
+  z-index: 2147483643;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.pinSnapperOverlay * {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+.pinSnapperOverlay .selection {
+  -webkit-border-image: url('chrome-extension://__MSG_@@extension_id__/web_images/ants2.gif') 1 repeat repeat;
+  position: fixed;
+  z-index: 1;
+  border-width: 1px;
+  background-color: #fff;
+}
+.pinSnapperOverlay .mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /*cursor: crosshair;*/
+  z-index: 2;
+}
+.pinSnapperOverlay .dimmer {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  background-repeat: no-repeat;
+  -webkit-filter: brightness(50%);
+}
+.pinSnapperOverlay .close {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: image-width('../web_images/close.png');
+  height: image-height('../web_images/close.png');
+  z-index: 3;
+  cursor: pointer;
+  background: #ededed url('chrome-extension://__MSG_@@extension_id__/web_images/close.png') center center no-repeat;
+  padding: 9px;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.74);
+}
+.pinSnapperOverlay .close:hover {
+  background-color: #d62229;
+  background-image: url('chrome-extension://__MSG_@@extension_id__/web_images/close_hover.png');
+}
+.pinSnapperOverlay .hidden {
+  visibility: hidden;
+}
+
+.pinSnapperOverlay .target-language {
+  z-index: 4;
+  position: fixed;
+  color: black;
+  top: 19px;
+  right: 50px;
+}
